@@ -1,0 +1,153 @@
+.hero_section {
+  height: 40vh;
+  min-height: 400px;
+  position: relative;
+  background: url(../assets/aboutus/hero_bg.jpg) bottom/cover no-repeat;
+  background-attachment: fixed;
+}
+.hero_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero_dis {
+  width: fit-content;
+  background: none;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+}
+
+.hero_dis_navigate a,
+.hero_dis_navigate {
+  font-size: calc(var(--body_text) * 1.2);
+  color: var(--white_color);
+  color: #e3e0e0;
+}
+.hero_dis h4 {
+  margin-bottom: 0.5em;
+  font-size: var(--primary_header);
+  color: var(--white_color);
+}
+.service_card h2 {
+  font-size: var(--tertiory_header);
+}
+.why_choose_us_left_container {
+  width: min(600px, 100%);
+}
+
+.map_frame {
+  height: 600px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* !CONTACT US CARD */
+#contact_us_card_section {
+  background-color: #e1e1e1;
+}
+.contact_us_card_container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3em;
+}
+.contact_us_card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 200px;
+  background-color: var(--white_color);
+  width: min(350px, 100%);
+  text-align: center;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--three_mili);
+  -webkit-transition: var(--three_mili);
+  -moz-transition: var(--three_mili);
+  -ms-transition: var(--three_mili);
+  -o-transition: var(--three_mili);
+}
+.contact_us_card:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+.contact_us_card_btn_icon {
+  background-color: var(--primary_color);
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: grid;
+  color: var(--white_color);
+  place-items: center;
+  transform: translateY(-70%);
+  -webkit-transform: translateY(-70%);
+  -moz-transform: translateY(-70%);
+  -ms-transform: translateY(-70%);
+  -o-transform: translateY(-70%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.contact_us_card_btn_icon i {
+  font-size: var(--tertiary_header);
+}
+.contact_us_card h3 {
+  font-size: var(--body_text);
+  color: var(--secondary_black_color);
+  margin-bottom: 1em;
+}
+.contact_us_card h2 {
+  font-size: var(--body_text);
+}
+/* !TERTIARY HEADER */
+.form_input_container {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  margin: 1em 0;
+}
+.form_input_container label {
+  font-size: var(--body_text);
+}
+.form_input_container input,
+#dis {
+  font-size: var(--body_text);
+  padding: 0.4em;
+  width: 100%;
+  outline: 1px solid var(--secondary_black_color);
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.form_input_container input:focus,
+.form_input_container input:active,
+#dis:focus,
+#dis:active {
+  outline: 2px solid var(--primary_color);
+  border: none;
+}
+#dis {
+  resize: none;
+}
